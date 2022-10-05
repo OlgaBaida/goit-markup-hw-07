@@ -10,8 +10,8 @@
     color: var(--whaite-txt-color);
     line-height: calc(30/16);
     text-align: center;
-    
-    @include transition ($transition-property: background-color, box-shadow);
+    @include transition ($transition-property: background-color);
+    @include transition ($transition-property:box-shadow);
     
     &:hover,
     &:focus {
@@ -33,7 +33,7 @@
     border: none;
     margin: 0 auto;
     padding: 10px 50px;
-
+    @include transition;
     &:hover,
     &:focus {
         background: var(--btn-bg-hover);
@@ -41,13 +41,15 @@
     }
 }
 .btn--small {
-    white-space: nowrap;
+    height: 38px;
     padding: 6px 22px;
+    background-color: var(--section-bg-color);
+    color: var(--primery-txt-color);
     border: none;
     @include fonts($fw: 500);
-    line-height: calc(26 / 16);
-    
-
+    @include transition ($transition-property: background-color);
+    @include transition ($transition-property: box-shadow);
+     @include transition;
     &:hover,
     &:focus {
         color: var(--whaite-txt-color);

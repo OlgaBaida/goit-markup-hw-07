@@ -11,11 +11,10 @@
     color: var(--whaite-txt-color);
     font-style: normal;
     line-height: 1.7;
-
+    @include transition;
     &:hover
      {
         color: var(--accent-txt-color);
-        @include transition;
     }
 }
 .adress__contact {
@@ -24,4 +23,9 @@
     font-style: normal;
     line-height: 1.7;
     @include transition; 
+
+    &:hover {
+        color: var(--accent-txt-color);
+    }
+
 }

@@ -24,5 +24,6 @@
     }
 }
 .clients__icon {
+    @include transition;
     fill: currentColor;
 }

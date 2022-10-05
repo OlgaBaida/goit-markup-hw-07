@@ -1,6 +1,7 @@
 .portfolio {
-    @include section ($padding-top: 94px);
+ @include section;
 }
+
 .portfolio__btns {
     display: flex;
     justify-content: center;

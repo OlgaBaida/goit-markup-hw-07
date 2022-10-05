@@ -12,7 +12,8 @@
     background-color: var(--whaite--bg-color);
     color: var(--social-icon);
     border-radius: 50%;
-    @include transition ($transition-property: color, background-color);
+    @include transition; 
+    @include transition ($transition-property:background-color);
     
     &:hover,
     &:focus {
